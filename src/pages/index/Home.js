@@ -68,7 +68,6 @@ function Home() {
   const { project_name, intro_audio } = JSON.parse(localStorage.getItem("markerData")) || { project_name: "", intro_audio: "" };
 
   function handleClick() {
-    setFullScreen();
     setUpDeviceMotion();
     history.push("intro");
   }
